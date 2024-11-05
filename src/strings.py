@@ -6,4 +6,4 @@ def try_get(target_str: str, index: int, default: str) -> str:
 
 
 def is_digit(s: str) -> bool:
-    return (s[1:] if s[0] in ('-', '+') else s).isdigit()
+    return (s[1:] if s[0] in ("-", "+") else s).isdigit()
