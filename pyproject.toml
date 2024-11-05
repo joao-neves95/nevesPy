@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0.0,<69.3.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "NevesPy"
+description = "My personal collection of Python utilities."
+dynamic = ["version"]
+requires-python = ">= 3.10"
+dependencies = [
+    "pypdf>=5.1.0",
+    "pypdf[crypto]>=5.1.0",
+]
+authors = [
+  {name = "João Neves", email = "joao95neves@gmail.com"},
+]
+readme = "README.md"
+license = {text = "GNU AFFERO GENERAL PUBLIC LICENSE"}
