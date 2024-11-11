@@ -17,5 +17,9 @@ source = "https://github.com/joao-neves95/nevesPy"
 download = "https://github.com/joao-neves95/nevesPy/archive/master.zip"
 
 [tool.setuptools]
-packages = ["nevespy" ]
-package-dir = { "nevespy" = "src" }
+packages = ["nevespy", "nevespy.fs", "nevespy.calc"]
+
+[tool.setuptools.package-dir]
+"nevespy" = "src"
+"nevespy.fs" = "src/fs"
+"nevespy.calc" = "src/calc"
