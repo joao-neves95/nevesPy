@@ -8,11 +8,14 @@ description = "My personal collection of Python utilities."
 license = { file = "LICENSE.md" }
 dynamic = ["version"]
 requires-python = ">= 3.10"
-
 dependencies = ["pypdf>=5.1.0", "pypdf[crypto]>=5.1.0"]
 authors = [{ name = "João Neves", email = "joao95neves@gmail.com" }]
 readme = "README.md"
 
+[project.urls]
+source = "https://github.com/joao-neves95/nevesPy"
+download = "https://github.com/joao-neves95/nevesPy/archive/master.zip"
+
 [tool.setuptools]
-packages = ["nevespy", "nevespy.fs", "nevespy.calc"]
-package-dir = { "nevespy" = "src", "nevespy.fs" = "src/fs", "nevespy.calc" = "src/calc" }
+packages = ["nevespy" ]
+package-dir = { "nevespy" = "src" }
