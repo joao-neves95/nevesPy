@@ -5,14 +5,14 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "NevesPy"
 description = "My personal collection of Python utilities."
+license = { file = "LICENSE.md" }
 dynamic = ["version"]
 requires-python = ">= 3.10"
-dependencies = [
-    "pypdf>=5.1.0",
-    "pypdf[crypto]>=5.1.0",
-]
-authors = [
-  {name = "João Neves", email = "joao95neves@gmail.com"},
-]
+
+dependencies = ["pypdf>=5.1.0", "pypdf[crypto]>=5.1.0"]
+authors = [{ name = "João Neves", email = "joao95neves@gmail.com" }]
 readme = "README.md"
-license = {text = "GNU AFFERO GENERAL PUBLIC LICENSE"}
+
+[tool.setuptools]
+packages = ["nevespy", "nevespy.fs", "nevespy.calc"]
+package-dir = { "nevespy" = "src", "nevespy.fs" = "src/fs", "nevespy.calc" = "src/calc" }
