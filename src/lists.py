@@ -8,6 +8,17 @@ def try_get(target: list[Any], index: int, default: Any) -> Any:
         return default
 
 
+def list_swap(source: list[Any], index_a: int, index_b: int) -> list[Any]:
+    """
+    Swaps two elements in a list at the specified indices.
+    """
+    if index_a < 0 or index_b < 0 or index_a >= len(source) or index_b >= len(source):
+        raise IndexError("Index out of range")
+
+    source[index_a], source[index_b] = source[index_b], source[index_a]
+    return source
+
+
 def strip_str_list(source: list[str]):
     return [item for item in source if item.strip()]
 
